@@ -1,0 +1,101 @@
+---
+---
+@import 'variables';
+
+* {margin: 0; padding: 0;}
+
+html {font-size: 62.5%;}
+
+.wrap {width: 56rem; margin-left: auto; margin-right: auto;}
+
+.site-header {
+  padding: 2rem 0 2.4rem;
+  background: $color-blue;
+  font-family: $font-sans;
+  color: #fff;
+}
+.site-header a {color: inherit;}
+.site-logo {
+  margin: 0 0 0.8rem;
+  font-size: $size-giant; font-weight: 400;
+  letter-spacing: 0.05rem;
+  color: #fff;
+}
+.site-logo a {text-decoration: none;}
+.site-title {
+  color: $color-off-blue;
+  font-size: $size-small;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.05rem;
+}
+
+.site-content {padding: 6rem 0;}
+
+.site-footer {
+  padding: 4rem 0;
+  font-family: $font-sans; font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  color: $color-light-grey;
+}
+
+
+.post {
+  margin: 0 0 6rem; list-style: none;
+}
+.post-title {
+  margin: 0 0 0.6rem;
+  font-family: $font-sans; font-size: $size-title; font-weight: 400;
+  line-height: $leading-title;
+  letter-spacing: 0.05rem;
+  color: $color-blue;
+}
+.post-title a {color: inherit;}
+.post-title a:hover {color: $color-light-blue;}
+.post-title span {color: $color-grey; line-height: 0.5;}
+.post-meta {
+  margin: 0 0 1.6rem;
+  font-family: $font-sans; font-size: $size-meta;
+  letter-spacing: 0.05rem;
+  color: $color-light-grey;
+}
+
+.post-content {
+  font-size: $size-text; font-family: $font-serif;
+  color: #222; line-height: $leading-text; letter-spacing: 0.025rem;
+}
+.post-content.mod-excerpt {
+  font-size: $size-text-small;
+  line-height: $leading-text-small;
+}
+.post-content p {margin-bottom: 1.8rem;}
+.post-content a {color: $color-blue;}
+.post-content a:visited {color: $color-grey;}
+.post-content a:hover {color: $color-light-blue;}
+
+
+.post-content .footnotes {
+  margin: $leading-text 0 0;
+  font-size: $size-text-smaller;
+}
+.post-content .footnotes hr {
+  border: none; border-top: 0.1rem solid $color-lighter-grey;
+}
+.post-content .footnotes ol {
+  margin: 1.6rem 0 0;
+  list-style-position: inside;
+}
+.post-content .footnotes li {
+  line-height: $leading-text-small;
+}
+
+/* Homepage ---------------------------------------------------------------- */
+
+.posts.mod-home {
+  .post-content {color: #444;}
+
+  .post-content .footnotes {display: none;}
+}
+
+
+

@@ -1,0 +1,15 @@
+---
+layout: post
+title:  Forgotten worlds in the computer
+date:   2014-12-16 18:00:00
+---
+
+I may have stayed up way too late last night reading through a historical archive about the [Apollo Guidance Computer](http://authors.library.caltech.edu/5456/1/hrst.mit.edu/hrs/apollo/public/index.html). That computer is one of the great examples of embedded computing: a powerful (for the time) computing machine designed to perform a restricted set of complex operations in a specific environment. The archive is a fascinating trove of information and [great diagrams] about the development of the computer. It's surprising how many of the problems that they ran into in the late 50s and early 60s are still relevant today, from memory architecture to instruction timing to the impact of numerical precision decisions and optimizations (see the [fast InvSqrt](http://en.wikipedia.org/wiki/Fast_inverse_square_root)).
+
+[great diagrams]: http://authors.library.caltech.edu/5456/1/hrst.mit.edu/hrs/apollo/public/images/59333.gif
+
+Reading through these archives reminded me of all the little worlds hidden away in computing architectures that are so critical to their operation yet which are also so commonly forgotten. When working in very high-level languages (eg. JavaScript and Ruby) I normally consider function invocations, type system interactions, array/dictionary accesses, and similar performance characteristics. When working in lower-level systems (eg. C and assemblers) I worry about branch prediction, cache eviction, distant pointer dereferences, context switching, and all those other nagging causes of [thrashing](http://en.wikipedia.org/wiki/Thrashing_\(computer_science\)).
+
+But there's entire domains of the execution architecture that I'm not considering, and in some cases I definitely should be. There's the realm of [microcode](http://en.wikipedia.org/wiki/Microcode): the ultra-low-level instructions that tell the processor how to go about executing the traditional instructions it reads from memory. The Apollo computer and [IBM systems](http://en.wikipedia.org/wiki/IBM_System/360) of the time were the first machines to implement the type of microcode that we are familiar with today. The design and operation of these microprograms are critical to the operation and performance of computers, but they're not something we think about every day. Also, these microprograms sometimes come with bugs and errors, sometimes requiring patching. Ben Hawkes' write-up on [attempts at reverse engineering these patches](http://inertiawar.com/microcode/) is also worth a read.
+
+We don't much consider these little worlds tucked away in our machines, and that's not really a bad thing. As computing advances we're able to work at higher and higher levels of abstraction from the hardware and systems underpinning our programs, and that greater abstraction makes programming easier and more accessible to people. Although we certainly still need *some* people to care about this low-level stuff, looking back at this technology shows us just how far computing has come, especially in terms of user friendliness and ease of programming.

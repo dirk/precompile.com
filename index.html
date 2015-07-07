@@ -1,0 +1,23 @@
+---
+layout: blog
+title: Weblog
+---
+<div class="wrap">
+  <ul class="posts mod-home">
+    {% for post in site.posts %}
+      <li class="post">
+        <div class="post-header">
+          <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span>&#8614;</span></h2>
+          <p class="post-meta">
+            <span class="post-date">{{ post.date | date_to_string }}</span>
+          </p>
+        </div>
+        {% if post.summary %}
+          <div class="post-content mod-excerpt">
+            {{ post.summary }}
+          </div>
+        {% endif %}
+      </li><!--/.post-->
+    {% endfor %}
+  </ul>
+</div>

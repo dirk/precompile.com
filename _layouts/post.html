@@ -1,0 +1,17 @@
+---
+layout: blog
+---
+<div class="wrap mod-post">
+  <div class="post">
+    <div class="post-header">
+      <h2 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+      <p class="post-meta">
+        <span class="post-date">{{ page.date | date_to_string }}</span>
+      </p>
+    </div>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </div><!--/.post-->
+</div>

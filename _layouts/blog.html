@@ -1,0 +1,49 @@
+{% capture full_title %}precompile: {{ page.title }}{% endcapture %}
+{% capture cache_time %}{{ site.time | date: '%s' }}{% endcapture %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ full_title }}</title>
+    <!-- metadata -->
+    <meta name="keywords"     content="{{ site.keywords }}" />
+    <meta name="og:url"       content="{{ site.url }}{{ page.url }}" />
+    <meta name="og:site_name" content="precompile.com by Dirk Gadsden" />
+    <!-- primary -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=520" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="/css/styles.css?{{ cache_time }}" rel="stylesheet" />
+    <!-- syntax highlighting -->
+    <link rel="stylesheet" href="/css/syntax.css">
+    <!-- secondary -->
+    <script type="text/javascript" src="//use.typekit.net/sxd4bax.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <!-- syndication -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} (precompile.com)" href="{{ site.url }}/feed.xml">
+  </head>
+  <body>
+    <div class="site-container blog">
+      <header class="site-header"><div class="wrap">
+        <h1 class="site-logo">
+          <a href="/">{{ site.name }}</a>
+        </h1>
+        <p class="site-title">The weblog of <a href="https://dirk.to">Dirk Gadsden</a>.</p>
+        <!-- <div class="site-header-right">
+          <a href="https://twitter.com/drkgdsdn">Twitter</a>
+          <a href="{{ site.url }}/feed.xml" class="rss">RSS</a>
+        </div> -->
+      </div></header><!--/.wrap/.site-header-->
+
+      <div class="site-content">
+        {{ content }}
+      </div>
+
+      <div class="site-footer wrap">
+        &copy; Copyright 2015 Dirk Gadsden. All Rights Reserved.
+      </div>
+    </div>
+
+    {% include tracking.html %}
+
+  </body>
+</html>
