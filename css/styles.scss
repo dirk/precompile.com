@@ -4,29 +4,39 @@
 
 * {margin: 0; padding: 0;}
 
-html {font-size: 62.5%;}
+html {
+  font-size: 62.5%;
+  background: $color-blue;
+}
 
 .wrap {width: 56rem; margin-left: auto; margin-right: auto;}
 
+.site-container {
+  background: #fff;
+}
+
 .site-header {
-  padding: 2rem 0 2.4rem;
-  background: $color-blue;
-  font-family: $font-sans;
-  color: #fff;
+  padding: 4rem 0 2rem;
+  border-top: 0.4rem solid $color-blue;
+  font-family: $font-sans; font-size: $size-small;
+  color: $color-grey;
 }
 .site-header a {color: inherit;}
 .site-logo {
   margin: 0 0 0.8rem;
   font-size: $size-giant; font-weight: 400;
   letter-spacing: 0.05rem;
-  color: #fff;
+  color: $color-darker-grey;
 }
 .site-logo a {text-decoration: none;}
 .site-title {
   color: $color-off-blue;
-  font-size: $size-small;
   /* text-transform: uppercase; */
   letter-spacing: 0.05rem;
+}
+.site-subheader .site-link {
+  margin: 0 0.2rem 0;
+  color: $color-dark-grey;
 }
 
 .site-content {padding: 6rem 0;}
@@ -44,7 +54,7 @@ html {font-size: 62.5%;}
   margin: 0 0 6rem; list-style: none;
 }
 .post-title {
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.4rem;
   font-family: $font-sans; font-size: $size-title; font-weight: 400;
   line-height: $leading-title;
   letter-spacing: 0.05rem;
@@ -54,7 +64,7 @@ html {font-size: 62.5%;}
 .post-title a:hover {color: $color-light-blue;}
 .post-title span {color: $color-grey; line-height: 0.5;}
 .post-meta {
-  margin: 0 0 1.6rem;
+  margin: 0 0 2.4rem;
   font-family: $font-sans; font-size: $size-meta;
   letter-spacing: 0.05rem;
   color: $color-light-grey;
@@ -92,6 +102,8 @@ html {font-size: 62.5%;}
 /* Homepage ---------------------------------------------------------------- */
 
 .posts.mod-home {
+  .post-meta {margin: 0 0 1.6rem;}
+
   .post-content {color: #444;}
 
   .post-content .footnotes {display: none;}
