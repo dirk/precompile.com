@@ -1,19 +1,22 @@
-$font-serif: "freight-text-pro", Georgia, serif;
-$font-sans: "ff-dagny-web-pro", Arial, sans-serif;
+$font-serif: "grad", Georgia, serif;
+$font-sans: Helvetica, Arial, sans-serif;
+$font-mono: Courier, monospace;
 
-$size-giant: 3.2rem;
-$size-small: 1.2rem;
+$size-giant: 5rem;
+$size-small: 1.25rem;
 
-$size-title: 2.4rem;
-$size-meta:  1.5rem;
-$size-text:  1.8rem;
+$size-title: 2.5rem;
+$size-meta:  1.25rem;
+$size-text:  1.75rem;
 $size-text-small: 1.6rem;
 $size-text-smaller: 1.5rem;
+$size-text-code-block: 1.125rem;
 
 // Line heights
-$leading-title: 3.2rem;
-$leading-text: 3.2rem;
-$leading-text-small: 2.4rem;
+$leading-title: 3.25rem;
+$leading-text: 3rem;
+$leading-text-small: 2.5rem;
+$leading-text-code: 2rem;
 
 $color-blue: #296486;
 $color-light-blue: #59b6e6;

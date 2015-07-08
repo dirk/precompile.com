@@ -39,11 +39,11 @@ html {
   color: $color-dark-grey;
 }
 
-.site-content {padding: 6rem 0;}
+.site-content {padding: 7.5rem 0;}
 
 .site-footer {
-  padding: 4rem 0;
-  font-family: $font-sans; font-size: 1.4rem;
+  padding: 4rem 0 6rem;
+  font-family: $font-sans; font-size: 1.375rem;
   text-align: center;
   letter-spacing: 0.05rem;
   color: $color-light-grey;
@@ -54,7 +54,7 @@ html {
   margin: 0 0 6rem; list-style: none;
 }
 .post-title {
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.5rem;
   font-family: $font-sans; font-size: $size-title; font-weight: 400;
   line-height: $leading-title;
   letter-spacing: 0.05rem;
@@ -64,7 +64,7 @@ html {
 .post-title a:hover {color: $color-light-blue;}
 .post-title span {color: $color-grey; line-height: 0.5;}
 .post-meta {
-  margin: 0 0 2.4rem;
+  margin: 0 0 2rem;
   font-family: $font-sans; font-size: $size-meta;
   letter-spacing: 0.05rem;
   color: $color-light-grey;
@@ -78,7 +78,16 @@ html {
   font-size: $size-text-small;
   line-height: $leading-text-small;
 }
-.post-content p {margin-bottom: 1.8rem;}
+.post-content p {
+  margin-bottom: $size-text;
+}
+.post-content code {
+  padding: 0 0.125rem;
+  font-family: $font-mono; font-size: $size-text-small;
+}
+.post-content .highlight {margin: $leading-text 0;}
+.post-content .highlight pre {line-height: $leading-text-code;}
+.post-content .highlight code {font-size: $size-text-code-block;}
 .post-content a {color: $color-blue;}
 .post-content a:visited {color: $color-grey;}
 .post-content a:hover {color: $color-light-blue;}
