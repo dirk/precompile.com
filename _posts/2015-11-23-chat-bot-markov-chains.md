@@ -2,7 +2,7 @@
 layout:  post
 title:   Markov chain generator in your chat bot
 date:    2015-11-23 16:00:00
-summary: Making all of your JSON serialization be fast.
+summary: Store Markov chains for each user in your chot bot; generate sentences from those chains for great fun.
 ---
 
 Last night I coded up a basic [Lita](https://www.lita.io/) plugin for ingesting chat messages into Markov chains and generating sentences from those chains upon request; the source is available on [GitHub](https://github.com/dirk/lita-markov) and [RubyGems](https://rubygems.org/gems/lita-markov). It turned out this was almost trivial to accomplish.
