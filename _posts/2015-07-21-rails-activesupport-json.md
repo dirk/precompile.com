@@ -16,7 +16,7 @@ Thankfully, it's easy to switch out that encoder for a faster one:
 module ActiveSupport::JSON::Encoding
   class Oj < JSONGemEncoder
     def encode value
-      ::Oj.dump(value.as_json options.dup)
+      ::Oj.dump(value.as_json)
     end
   end
 end
