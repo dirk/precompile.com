@@ -1,9 +1,12 @@
 name: precompile
 url: https://precompile.com
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 
-redcarpet:
-  extensions: [footnotes]
+kramdown:
+  input: GFM
+
+# redcarpet:
+#   extensions: [footnotes]
 
 keywords: "Dirk Gadsden, software engineering, web development, programming, C, Ruby, JavaScript"
