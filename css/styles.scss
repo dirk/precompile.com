@@ -81,6 +81,13 @@ html {
 .post-content p {
   margin-bottom: $size-text;
 }
+.post-content ol,
+.post-content ul {
+  margin: 0 0 $size-text $size-text * 2;
+}
+.post-content li {
+  margin-bottom: $size-text / 2;
+}
 .post-content h3 {
   margin: $leading-text 0 0.5rem;
   font-size: $size-text * 1.25;
@@ -125,6 +132,3 @@ html {
 
   .post-content .footnotes {display: none;}
 }
-
-
-
