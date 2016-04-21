@@ -1,6 +1,6 @@
 ---
 layout:  post
-title:   Cleverness is the base of maintainability
+title:   Cleverness is the bane of maintainability
 date:    2016-04-21 19:45:00
 summary: Prefer simple and straightforward code over smart and fancy code.
 ---
