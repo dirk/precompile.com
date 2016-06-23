@@ -81,6 +81,9 @@ html {
 .post-content p {
   margin-bottom: $size-text;
 }
+.post-content img {
+  max-width: 100%;
+}
 .post-content ol,
 .post-content ul {
   margin: 0 0 $size-text $size-text * 2;
