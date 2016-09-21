@@ -31,4 +31,4 @@ go-vet: fail
 context/context.go:97: unreachable code
 ```
 
-"Manager" isn't the right word for Quickhook. Runner or coordinator is a better description. It has no knowledge of the implementation of the hook files. You can write hooks in Bash, Ruby, Javascript, or even compiled executables. And all you need in the `.git/hooks/pre-commit` script is a call to `quickhook hook pre-commit`. Go check it out [on GitHub](https://github.com/dirk/quickhook), and you install it [via a Homebrew tap](https://github.com/dirk/homebrew-quickhook).
+"Manager" isn't the right word for Quickhook. Runner or coordinator is a better description. It has no knowledge of the implementation of the hook files. You can write hooks in Bash, Ruby, Javascript, or even compiled executables. And all you need in the `.git/hooks/pre-commit` script is a call to `quickhook hook pre-commit`. Go check it out [on GitHub](https://github.com/dirk/quickhook)! You can easily install it [via a Homebrew tap](https://github.com/dirk/homebrew-quickhook).
