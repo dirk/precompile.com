@@ -104,12 +104,12 @@ html {
   font-family: $font-mono; font-size: $size-text-small;
 }
 .post-content .highlight {margin: $leading-text 0;}
+.post-content div.highlight {overflow-x: auto;}
 .post-content .highlight pre {line-height: $leading-text-code;}
 .post-content .highlight code {font-size: $size-text-code-block;}
 .post-content a {color: $color-blue;}
 .post-content a:visited {color: $color-grey;}
 .post-content a:hover {color: $color-light-blue;}
-
 
 .post-content .footnotes {
   margin: $leading-text 0 0;
