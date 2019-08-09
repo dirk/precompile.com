@@ -99,12 +99,16 @@ html {
   margin: ($leading-text / 1.5) 0 0.25rem;
   font-size: $size-text;
 }
+.post-content sup {
+  position: relative;
+  top: -0.75rem;
+  vertical-align: baseline;
+}
 .post-content code {
   padding: 0 0.125rem;
   font-family: $font-mono; font-size: $size-text-small;
 }
-.post-content .highlight {margin: $leading-text 0;}
-.post-content div.highlight {overflow-x: auto;}
+.post-content div.highlight {margin: $leading-text 0; overflow-x: auto;}
 .post-content .highlight pre {line-height: $leading-text-code;}
 .post-content .highlight code {font-size: $size-text-code-block;}
 .post-content a {color: $color-blue;}
